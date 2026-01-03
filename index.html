@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Kode Hub Studio - Digital Growth Agency for Startups & Businesses
+    </title>
+    <meta
+      name="description"
+      content="Kode Hub Studio is a future-forward digital growth agency delivering branding, graphic design, website development, social media management, and scalable digital marketing solutions for startups and tech-driven businesses."
+    />
+
+    <!-- Open Graph -->
+    <meta
+      property="og:title"
+      content="Kode Hub Studio - Premier Digital Growth Agency"
+    />
+    <meta
+      property="og:description"
+      content="Strategic branding, high-performance websites, and results-driven social media to accelerate your business growth."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://www.kodehubstudio.com/" />
+    <meta
+      property="og:image"
+      content="https://www.kodehubstudio.com/og-image.jpg"
+    />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="Kode Hub Studio - Digital Growth Agency"
+    />
+    <meta
+      name="twitter:description"
+      content="Innovative digital solutions for branding, web development, and growth marketing."
+    />
+
+    <!-- Schema Markup -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Kode Hub Studio",
+        "url": "https://www.kodehubstudio.com",
+        "logo": "https://www.kodehubstudio.com/logo.png",
+        "description": "Digital growth agency specializing in branding & graphic design, website development & management, social media, and digital marketing.",
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "contactType": "Customer Service",
+          "email": "hello@kodehubstudio.com"
+        }
+      }
+    </script>
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What services does Kode Hub Studio offer?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "We provide branding & graphic design, website development, website management, social media management, social media marketing & ads, and comprehensive digital growth strategy."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How much do your monthly plans cost?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Plans start at $149/mo for Starter, $349/mo for Growth, and $599/mo for Pro. Custom one-time projects are also available."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How long until I see results?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Many clients see measurable growth within 1-3 months, depending on the scope and strategy."
+            }
+          }
+        ]
+      }
+    </script>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+      integrity="sha512-XXXXX" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="relative">
+    <div class="bg-grid"></div>
+
+    <!-- Navbar -->
+    <header
+      class="sticky top-0 z-50 bg-black/40 backdrop-blur-xl border-b border-white/10"
+    >
+      <div
+        class="max-w-7xl mx-auto px-6 py-5 flex justify-between items-center"
+      >
+        <div
+          style="
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 1rem;
+            font-size: clamp(1.5rem, 4vw, 2rem);
+            font-weight: bolder;
+          "
+        >
+          <img 
+            src="logo.png" 
+            class="logo" 
+            alt="Kode Hub Studio"
+            style="width: clamp(2.5rem, 8vw, 3.5rem); height: auto;"
+          />
+          <label>Kode Hub</label>
+        </div>
+        <nav class="hidden md:flex items-center gap-10 text-lg">
+          <a href="#hero" class="hover:text-#3aa8ff transition">Home</a>
+          <a href="#services" class="hover:text-#3aa8ff transition">Services</a>
+          <a href="#pricing" class="hover:text-#3aa8ff transition">Pricing</a>
+          <a href="#process" class="hover:text-#3aa8ff transition">Process</a>
+          <a href="#testimonials" class="hover:text-#3aa8ff transition"
+            >Testimonials</a
+          >
+          <a href="#faq" class="hover:text-#3aa8ff transition">FAQ</a>
+          <button class="primary-btn">Start Growing</button>
+        </nav>
+        <button id="mobile-menu-btn" class="md:hidden text-white">
+          <svg
+            class="w-8 h-8"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 6h16M4 12h16M4 18h16"
+            />
+          </svg>
+        </button>
+      </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div
+      id="mobile-menu"
+      class="hidden fixed inset-0 bg-black/95 backdrop-blur-lg z-40 pt-20 px-8"
+    >
+      <nav class="flex flex-col gap-6 text-xl">
+        <a href="#hero" class="hover:text-#3aa8ff">Home</a>
+        <a href="#services" class="hover:text-#3aa8ff">Services</a>
+        <a href="#pricing" class="hover:text-#3aa8ff">Pricing</a>
+        <a href="#process" class="hover:text-#3aa8ff">Process</a>
+        <a href="#testimonials" class="hover:text-#3aa8ff">Testimonials</a>
+        <a href="#faq" class="hover:text-#3aa8ff">FAQ</a>
+        <button class="primary-btn mt-6">Start Growing</button>
+      </nav>
+    </div>
+
+    <!-- Hero Section -->
+    <section
+      id="hero"
+      class="relative z-10 min-h-screen flex items-center px-6 md:px-20 max-w-7xl mx-auto"
+    >
+      <div class="grid md:grid-cols-2 gap-12 items-center">
+        <div class="animate-on-scroll fly-left">
+          <h1 class="text-4xl md:text-6xl font-extrabold leading-tight mb-6">
+            Accelerate Your<br />
+            <span
+              class="bg-clip-text bg-gradient-to-r from-#3aa8ff to-#cfe9ff text-blue-900"
+              >Digital Growth</span
+            >
+          </h1>
+          <p class="text-xl text-blue-100 mb-10 max-w-lg">
+            Future-forward branding, high-converting websites, and strategic
+            social media management that drives measurable results for startups
+            and ambitious businesses.
+          </p>
+          <div class="flex flex-wrap gap-6">
+            <button class="primary-btn text-lg">Start Growing</button>
+            <button class="secondary-btn text-lg">View Services</button>
+          </div>
+        </div>
+        <div class="animate-on-scroll fly-right">
+          <img
+            src="./dynamic-data-visualization-3d.jpg"
+            alt=""
+            class="animate-float rounded-lg shadow-lg"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- Trusted Value Proposition -->
+    <section
+      class="py-24 px-6 md:px-20 relative z-10 bg-black/25 backdrop-blur-lg"
+    >
+      <div class="max-w-5xl mx-auto text-center">
+        <h2 class="section-title animate-on-scroll fly-top">Why Leading Brands Trust Kode Hub Studio</h2>
+        <div class="grid md:grid-cols-3 gap-10">
+          <div class="glass-card animate-on-scroll fly-left">
+            <h3 class="text-2xl font-bold mb-4 text-#3aa8ff">
+              <i class="fas fa-bolt mr-3"></i>Speed & Agility
+            </h3>
+            <p>
+              Lightning-fast delivery without compromising quality — perfect for
+              fast-moving startups.
+            </p>
+          </div>
+          <div class="glass-card animate-on-scroll fly-bottom">
+            <h3 class="text-2xl font-bold mb-4 text-#3aa8ff">
+              <i class="fas fa-lightbulb mr-3"></i>Strategic Creativity
+            </h3>
+            <p>
+              Beautiful design backed by data-driven strategy that converts
+              visitors into customers.
+            </p>
+          </div>
+          <div class="glass-card animate-on-scroll fly-right">
+            <h3 class="text-2xl font-bold mb-4 text-#3aa8ff"><i class="fas fa-trophy mr-3"></i>Proven Results</h3>
+            <p>
+              Trackable growth metrics, higher ROI, and long-term scalability
+              built into every project.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-24 px-6 md:px-20 relative z-10">
+      <h2 class="section-title animate-on-scroll fly-top">Our Growth-Driven Services</h2>
+      <div class="grid md:grid-cols-3 gap-10 max-w-7xl mx-auto">
+        <div class="glass-card animate-on-scroll fly-left">
+          <div class="text-5xl mb-6"><i class="fas fa-palette"></i></div>
+          <h3 class="text-2xl font-bold mb-4">Branding & Graphic Design</h3>
+          <p>
+            Memorable brand identities, logos, and visuals that position your
+            startup as an industry leader.
+          </p>
+        </div>
+        <div class="glass-card animate-on-scroll fly-bottom">
+          <div class="text-5xl mb-6"><i class="fas fa-globe"></i></div>
+          <h3 class="text-2xl font-bold mb-4">Website Development</h3>
+          <p>
+            Fast, SEO-optimized, conversion-focused websites built with modern
+            tech stacks.
+          </p>
+        </div>
+        <div class="glass-card animate-on-scroll fly-right">
+          <div class="text-5xl mb-6"><i class="fas fa-tools"></i></div>
+          <h3 class="text-2xl font-bold mb-4">
+            Website Management & Maintenance
+          </h3>
+          <p>
+            Ongoing updates, security, performance optimization, and peace of
+            mind.
+          </p>
+        </div>
+        <div class="glass-card animate-on-scroll fly-left">
+          <div class="text-5xl mb-6"><i class="fas fa-mobile-alt"></i></div>
+          <h3 class="text-2xl font-bold mb-4">Social Media Management</h3>
+          <p>
+            Consistent content, community growth, and engagement across all
+            platforms.
+          </p>
+        </div>
+        <div class="glass-card animate-on-scroll fly-bottom">
+          <div class="text-5xl mb-6"><i class="fas fa-chart-line"></i></div>
+          <h3 class="text-2xl font-bold mb-4">Social Media Marketing & Ads</h3>
+          <p>Targeted campaigns that drive traffic, leads, and revenue.</p>
+        </div>
+        <div class="glass-card animate-on-scroll fly-right">
+          <div class="text-5xl mb-6"><i class="fas fa-rocket"></i></div>
+          <h3 class="text-2xl font-bold mb-4">Digital Growth Strategy</h3>
+          <p>
+            Holistic roadmap combining branding, web, and marketing for maximum
+            impact.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section
+      id="pricing"
+      class="py-24 px-6 md:px-20 relative z-10 bg-black/10 backdrop-blur-lg"
+    >
+      <h2 class="section-title animate-on-scroll fly-top">Transparent Monthly Plans</h2>
+      <div class="grid md:grid-cols-3 gap-10 max-w-7xl mx-auto">
+        <div class="glass-card animate-on-scroll fly-left">
+          <h3 class="text-3xl font-bold mb-4">Starter</h3>
+          <p class="text-5xl font-extrabold mb-8">
+            $149<span class="text-lg font-normal">/mo</span>
+          </p>
+          <ul class="space-y-4 mb-10 text-blue-100">
+            <li><i class="fas fa-check text-#3aa8ff mr-2"></i> Basic Branding Kit</li>
+            <li><i class="fas fa-check text-#3aa8ff mr-2"></i> Website Maintenance</li>
+            <li><i class="fas fa-check text-#3aa8ff mr-2"></i> Social Media Setup</li>
+            <li><i class="fas fa-check text-#3aa8ff mr-2"></i> Monthly Reports</li>
+          </ul>
+          <button class="primary-btn w-full">Get Started</button>
+        </div>
+        <div class="glass-card ring-4 ring-#3aa8ff/50 scale-105 animate-on-scroll fly-bottom">
+          <div
+            class="bg-#3aa8ff/20 text-#3aa8ff px-4 py-2 rounded-full inline-block mb-4"
+          >
+            Most Popular
+          </div>
+          <h3 class="text-3xl font-bold mb-4">Growth</h3>
+          <p class="text-5xl font-extrabold mb-8">
+            $349<span class="text-lg font-normal">/mo</span>
+          </p>
+          <ul class="space-y-4 mb-10 text-blue-100">
+            <li><i class="fas fa-check text-#3aa8ff mr-2"></i> Full Branding & Design</li>
+            <li><i class="fas fa-check text-#3aa8ff mr-2"></i> Custom Website</li>
+            <li><i class="fas fa-check text-#3aa8ff mr-2"></i> Social Media Management</li>
+            <li><i class="fas fa-check text-#3aa8ff mr-2"></i> Paid Ads Management</li>
+            <li><i class="fas fa-check text-#3aa8ff mr-2"></i> Priority Support</li>
+          </ul>
+          <button class="primary-btn w-full">Get Started</button>
+        </div>
+        <div class="glass-card animate-on-scroll fly-right">
+          <h3 class="text-3xl font-bold mb-4">Pro</h3>
+          <p class="text-5xl font-extrabold mb-8">
+            $599<span class="text-lg font-normal">/mo</span>
+          </p>
+          <ul class="space-y-4 mb-10 text-blue-100">
+            <li><i class="fas fa-check text-#3aa8ff mr-2"></i> Advanced Growth Strategy</li>
+            <li><i class="fas fa-check text-#3aa8ff mr-2"></i> Enterprise Web Solutions</li>
+            <li><i class="fas fa-check text-#3aa8ff mr-2"></i> Full-Scale Marketing</li>
+            <li><i class="fas fa-check text-#3aa8ff mr-2"></i> Analytics & Optimization</li>
+            <li><i class="fas fa-check text-#3aa8ff mr-2"></i> Dedicated Account Manager</li>
+          </ul>
+          <button class="primary-btn w-full">Get Started</button>
+        </div>
+      </div>
+      <p class="text-center mt-12 text-lg animate-on-scroll fly-bottom">
+        Need a custom one-time project?
+        <a href="#contact" class="text-#3aa8ff underline"
+          >Contact us for a quote</a
+        >.
+      </p>
+    </section>
+
+    <!-- How It Works -->
+    <section id="process" class="py-24 px-6 md:px-20 relative z-10">
+      <h2 class="section-title animate-on-scroll fly-top">How We Drive Your Growth</h2>
+      <div class="grid md:grid-cols-4 gap-8 max-w-7xl mx-auto">
+        <div class="glass-card text-center animate-on-scroll fly-left">
+          <div class="text-6xl mb-6"><i class="fas fa-search"></i></div>
+          <h3 class="text-2xl font-bold mb-4">Strategy</h3>
+          <p>
+            Deep dive into your goals, audience, and market to craft a winning
+            roadmap.
+          </p>
+        </div>
+        <div class="glass-card text-center animate-on-scroll fly-bottom">
+          <div class="text-6xl mb-6"><i class="fas fa-paint-brush"></i></div>
+          <h3 class="text-2xl font-bold mb-4">Design</h3>
+          <p>Create stunning, on-brand visuals and user experiences.</p>
+        </div>
+        <div class="glass-card text-center animate-on-scroll fly-right">
+          <div class="text-6xl mb-6"><i class="fas fa-code"></i></div>
+          <h3 class="text-2xl font-bold mb-4">Build</h3>
+          <p>Develop and launch high-performance digital assets.</p>
+        </div>
+        <div class="glass-card text-center animate-on-scroll fly-bottom">
+          <div class="text-6xl mb-6"><i class="fas fa-chart-bar"></i></div>
+          <h3 class="text-2xl font-bold mb-4">Grow</h3>
+          <p>Optimize, market, and scale continuously for sustained success.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="py-24 px-6 md:px-20 relative z-10 bg-black/30">
+      <h2 class="section-title animate-on-scroll fly-top">Why Choose Kode Hub Studio</h2>
+      <div class="glass-card max-w-5xl mx-auto animate-on-scroll fly-bottom">
+        <ul class="grid md:grid-cols-2 gap-8 text-lg">
+          <li class="flex gap-4">
+            <span class="text-#3aa8ff text-2xl"><i class="fas fa-check"></i></span> Tech-driven innovation
+            with modern tools and frameworks
+          </li>
+          <li class="flex gap-4">
+            <span class="text-#3aa8ff text-2xl"><i class="fas fa-check"></i></span> SEO-optimized and
+            conversion-focused from day one
+          </li>
+          <li class="flex gap-4">
+            <span class="text-#3aa8ff text-2xl"><i class="fas fa-check"></i></span> Scalable solutions that
+            grow with your business
+          </li>
+          <li class="flex gap-4">
+            <span class="text-#3aa8ff text-2xl"><i class="fas fa-check"></i></span> Transparent
+            communication and dedicated support
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section id="testimonials" class="py-24 px-6 md:px-20 relative z-10">
+      <h2 class="section-title animate-on-scroll fly-top">Client Success Stories</h2>
+      <div class="grid md:grid-cols-3 gap-10 max-w-7xl mx-auto">
+        <div class="glass-card animate-on-scroll fly-left">
+          <p class="italic mb-6">
+            "Kode Hub Studio delivered a brand and website that exceeded
+            expectations. Our conversions increased 180% in 3 months."
+          </p>
+          <p class="font-bold">— Alex Chen, Founder @ TechFlow</p>
+        </div>
+        <div class="glass-card animate-on-scroll fly-bottom">
+          <p class="italic mb-6">
+            "Their social media strategy turned our dormant accounts into
+            lead-generating machines. Incredible ROI."
+          </p>
+          <p class="font-bold">— Sarah Miller, CMO @ ScaleUp Labs</p>
+        </div>
+        <div class="glass-card animate-on-scroll fly-right">
+          <p class="italic mb-6">
+            "Reliable, creative, and results-oriented. The best digital growth
+            partner we've worked with."
+          </p>
+          <p class="font-bold">— James Rivera, CEO @ InnovateX</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Subscription CTA -->
+    <section class="py-24 px-6 md:px-20 relative z-10">
+      <div class="glass-card max-w-4xl mx-auto text-center animate-on-scroll fly-bottom">
+        <h2 class="text-4xl md:text-5xl font-bold mb-6">
+          Ready to Scale Faster?
+        </h2>
+        <p class="text-xl mb-10">
+          Join dozens of growing businesses trusting Kode Hub Studio for
+          continuous digital success.
+        </p>
+        <button class="primary-btn text-2xl px-12 py-5">
+          Start Your Growth Plan Today
+        </button>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="py-24 px-6 md:px-20 relative z-10 bg-black/30">
+      <h2 class="section-title animate-on-scroll fly-top">Frequently Asked Questions</h2>
+      <div class="max-w-4xl mx-auto space-y-8">
+        <details class="glass-card animate-on-scroll fly-left">
+          <summary class="text-xl font-bold cursor-pointer">
+            What services do you offer?
+          </summary>
+          <p class="mt-4">
+            We specialize in branding & graphic design, website development &
+            management, social media management & marketing, and full digital
+            growth strategies.
+          </p>
+        </details>
+        <details class="glass-card animate-on-scroll fly-bottom">
+          <summary class="text-xl font-bold cursor-pointer">
+            How much are your monthly plans?
+          </summary>
+          <p class="mt-4">
+            Starter: $149/mo · Growth: $349/mo · Pro: $599/mo. Custom one-time
+            projects available.
+          </p>
+        </details>
+        <details class="glass-card animate-on-scroll fly-right">
+          <summary class="text-xl font-bold cursor-pointer">
+            How quickly will I see results?
+          </summary>
+          <p class="mt-4">
+            Many clients see initial improvements within weeks and significant
+            growth in 1–3 months.
+          </p>
+        </details>
+        <details class="glass-card animate-on-scroll fly-bottom">
+          <summary class="text-xl font-bold cursor-pointer">
+            Do you offer support after launch?
+          </summary>
+          <p class="mt-4">
+            Yes — all monthly plans include ongoing support, updates, and
+            optimization.
+          </p>
+        </details>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-16 px-6 md:px-20 border-t border-white/10 relative z-10">
+      <div
+        class="max-w-7xl mx-auto grid md:grid-cols-4 gap-10 text-center md:text-left"
+      >
+        <div>
+          <div
+            class="flex items-center gap-3 mb-4 justify-center md:justify-start"
+          >
+            <div
+              class="w-10 h-10 bg-gradient-to-br from-#3aa8ff to-blue-600 rounded-lg"
+            ></div>
+            <span class="text-2xl font-extrabold">Kode Hub Studio</span>
+          </div>
+          <p class="text-blue-200">
+            Your trusted digital growth agency for startups and modern
+            businesses.
+          </p>
+        </div>
+        <div>
+          <h4 class="font-bold mb-4">Quick Links</h4>
+          <ul class="space-y-2">
+            <li><a href="#services" class="hover:text-#3aa8ff">Services</a></li>
+            <li><a href="#pricing" class="hover:text-#3aa8ff">Pricing</a></li>
+            <li><a href="#process" class="hover:text-#3aa8ff">Process</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-bold mb-4">Company</h4>
+          <ul class="space-y-2">
+            <li><a href="#about" class="hover:text-#3aa8ff">About</a></li>
+            <li>
+              <a href="#testimonials" class="hover:text-#3aa8ff"
+                >Testimonials</a
+              >
+            </li>
+            <li><a href="#faq" class="hover:text-#3aa8ff">FAQ</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-bold mb-4">Connect</h4>
+          <div class="flex gap-6 justify-center md:justify-start">
+            <a href="#" class="text-2xl hover:text-#3aa8ff"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="text-2xl hover:text-#3aa8ff"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" class="text-2xl hover:text-#3aa8ff"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+      </div>
+      <p class="text-center mt-12 text-blue-300 text-sm">
+        © 2026 Kode Hub Studio. Digital growth agency offering branding
+        solutions, web development, website management services, and social
+        media marketing.
+      </p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
